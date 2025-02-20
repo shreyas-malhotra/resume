@@ -1,0 +1,172 @@
+%-------------------------
+% Resume in Latex
+% Author : Shreyas Malhotra
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+\linespread{1.1}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx, multicol}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\setlength{\footskip}{4.35004pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+
+% Ensure PDF is machine-readable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\renewcommand{\labelitemi}{--} % Set dash as bullet point
+
+\newcommand{\resumeItem}[1]{
+  \item[--]\small{#1} % Align bullets consistently
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item \vspace{1pt}
+    \begin{tabularx}{\textwidth}{Xr}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabularx} \vspace{1pt}
+}
+
+\newcommand{\resumeCertHeading}[2]{
+    \item
+    \begin{tabularx}{\textwidth}{Xr}
+      \small#1 & #2 \\
+    \end{tabularx}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=1pt, itemsep=1pt, leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize} \vspace{1pt}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=2pt]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge Shreyas Malhotra} \\ \vspace{4pt}
+    \small \href{tel:+916284747449}{\underline{(+91) 62847-47449}} $|$ \small \href{mailto:shreyasmalhotra2003@gmail.com}{\underline{shreyasmalhotra2003@gmail.com}} \\
+    \small \href{https://linkedin.com/in/shreyas-malhotra}{\underline{linkedin.com/in/shreyas-malhotra}} $|$
+    \small \href{https://github.com/shreyas-malhotra}{\underline{github.com/shreyas-malhotra}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Security Engineer - Internship}{Mar 2022 -- May 2022}
+      {\href{https://fourcore.io}{FourCore Labs}}{New Delhi - Remote}
+      \resumeItemListStart
+        \resumeItem{Conducted in-depth research on global cybersecurity incidents, and produced comprehensive reports utilizing the MITRE ATT\&CK framework.}
+        \resumeItem{Proactively pursued research topics to expand knowledge base and deliver valuable insights.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Technical Community Specialist - Internship}{Mar 2022 -- Aug 2022}
+      {\href{https://whizoid.com}{Whizoid Studio}}{Indore - Remote}
+      \resumeItemListStart
+        \resumeItem{Organized and executed technical workshops, CTFs, and cybersecurity seminars, focusing on hands-on skills development.}
+        \resumeItem{Provided technical support during live events, troubleshooting real-time issues to ensure smooth delivery.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IT Support Technician - Apprenticeship}{May 2019 -- Aug 2020}
+      {Logictech Computers}{Hoshiarpur, Punjab - On-site}
+      \resumeItemListStart
+        \resumeItem{Built and maintained computer systems, resolving technical issues to ensure optimal performance.}
+        \resumeItem{Resolved operating system specific errors and misconfigurations.}
+        \resumeItem{Configured and maintained client CCTV equipment.}
+        \resumeItem{Executed high-priority data recovery operations using third-party tools, successfully retrieving critical information in time-constrained environments.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lovely Professional University}{Aug 2022 -- Jul 2025}
+      {BCA - Bachelor of Computer Applications, CGPA: 8.66}{}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeCertHeading
+      {\textbf{eJPT - Junior Penetration Tester} $|$ \emph{INE Security}}{Dec 2024 -- Dec 2027}
+    \resumeCertHeading
+      {\textbf{CC - Certified in Cybersecurity} $|$ \emph{ISC2}}{Jan 2023 -- Jul 2026}
+    \resumeCertHeading
+      {\textbf{RH124 - Red Hat System Administration I} $|$ \emph{Red Hat}}{Jul 2024}
+    \resumeCertHeading
+      {\textbf{RH134 - Red Hat System Administration II} $|$ \emph{Red Hat}}{Jul 2024}
+  \resumeSubHeadingListEnd
+
+%-----------ACCOMPLISHMENTS-----------
+
+\section{Accomplishments}
+\resumeItemListStart
+    \resumeItem{\textbf{Ranked 2nd} in \textbf{Hack Quest CTF 2024}, a 24-hour CTF event organized by \textbf{upGrad}.}
+    \resumeItem{Ranked among the \textbf{top 15 competitors} in \textbf{VulnX CTF 2024}, a 24-hour CTF event organized by \textbf{VULNCON Security Conference}.}
+    \resumeItem{Ranked in the \textbf{top 2\% of students globally} on \textbf{TryHackMe}, a practical Cyber Security training platform.}
+    \resumeItem{Ranked among the \textbf{top 50 competitors} in \textbf{BitGuard Cybersecurity Hackathon 2024}, a 20-day CTF event organized by \textbf{Mercer|Mettl}.}
+    \resumeItem{Ranked among the \textbf{top 50 competitors} in \textbf{CloudSEK CTF 2024}, a 6-hour CTF event organized by \textbf{CloudSEK}.}
+\resumeItemListEnd
+
+%-----------TECHNICAL SKILLS-----------
+
+\section{Technical Skills}
+  \resumeItemListStart
+    \resumeItem{\textbf{Cybersecurity Tools:} BurpSuite, Metasploit Framework, Nessus, Nmap, Wireshark, WPScan, Nikto}
+    \resumeItem{\textbf{Cybersecurity Frameworks:} MITRE ATT\&CK, OWASP Top Ten, NIST CSF}
+    \resumeItem{\textbf{DevOps:} Docker, Linux, GitHub Actions}
+    \resumeItem{\textbf{Cloud Computing:} AWS, Oracle Cloud Infrastructure (OCI), Linode}
+    \resumeItem{\textbf{Developer Tools:} Git, GitHub, Vim}
+  \resumeItemListEnd
+
+\end{document}
