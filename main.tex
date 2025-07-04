@@ -4,8 +4,8 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,12pt]{article}
-\linespread{1.1}
+\documentclass[a4paper,12pt]{article}
+\linespread{1}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -24,7 +24,7 @@
 \usepackage{ragged2e}
 \input{glyphtounicode}
 
-\usepackage[a4paper, margin=1.25in]{geometry}
+\usepackage[a4paper, margin=1in]{geometry}
 
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
@@ -57,10 +57,10 @@
 
 %-------------------------
 % Custom commands
-\renewcommand{\labelitemi}{--} % Set dash as bullet point
+\renewcommand{\labelitemi}{\textbullet} % Set bullet point
 
 \newcommand{\resumeItem}[1]{
-  \item[--]\small{#1} % Align bullets consistently
+  \item[\textbullet]\small{#1} % Align bullets consistently
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -92,25 +92,38 @@
 %----------HEADING----------
 
 \begin{center}
-    \textbf{\Huge Shreyas Malhotra} \\ \vspace{4pt}
-    \small \href{tel:+916284747449}{\underline{(+91) 62847-47449}} $|$ \small \href{mailto:shreyasmalhotra2003@gmail.com}{\underline{shreyasmalhotra2003@gmail.com}} \\
-    \small \href{https://linkedin.com/in/shreyas-malhotra}{\underline{linkedin.com/in/shreyas-malhotra}} $|$
-    \small \href{https://github.com/shreyas-malhotra}{\underline{github.com/shreyas-malhotra}}
+    \textbf{\LARGE Shreyas Malhotra} \\[2pt]
+    \textbf{Penetration Tester \textbar\ CTF Developer} \\[6pt]
+    {\footnotesize
+    \makebox[\textwidth][c]{%
+    \begin{tabular}{c}
+        \href{tel:+916284747449}{\underline{(+91) 62847-47449}} \textbar\ 
+        \href{mailto:shreyasmalhotra2003@gmail.com}{\underline{shreyasmalhotra2003@gmail.com}} \textbar\ 
+        \href{https://linkedin.com/in/shreyas-malhotra}{\underline{linkedin.com/in/shreyas-malhotra}} \textbar\ 
+        \href{https://github.com/shreyas-malhotra}{\underline{github.com/shreyas-malhotra}}
+    \end{tabular}}}
 \end{center}
+
+%----------SUMMARY----------
+
+\begin{justify}
+\small{
+Offensive Security Engineer with hands-on experience designing practical labs for platforms like OffSec. Strong in vulnerability research, CVE analysis, and technical content engineering. Currently pursuing CRTP to build deeper skills in Active Directory, enterprise attacks, and red team operations.
+}
+\end{justify}
 
 %-----------EXPERIENCE-----------
 
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Technical Content Engineer - Contract}{Mar 2025 -- Present}
+      {Technical Content Engineer - Freelance}{Mar 2025 -- Present}
       {\href{https://osmsec.xyz}{OsmSec}}{}
       \resumeItemListStart
-        \resumeItem{Designed and built virtual labs, CTF challenges, and hands-on exercises for clients like OffSec and Parrot CTFs, focusing on real-world relevance and skill application.}
-        \resumeItem{Authored clear, concise documentation for lab setups, challenges, and walkthroughs to ensure a seamless user experience.}
-        \resumeItem{Continuously refined and updated existing training content to match evolving attack surfaces and industry standards.}
-        \resumeItem{Worked closely with the team to brainstorm and innovate new ways to teach cybersecurity concepts.}
-        \resumeItem{Conducted in-depth CVE analysis to inform and enhance the development of relevant training content.}
+        \resumeItem{Designed and built offensive security training labs for clients like OffSec and Parrot CTFs.}
+        \resumeItem{Authored clear, concise documentation for lab setups and solution walkthroughs.}
+        \resumeItem{Conducted in-depth CVE research to enhance the development of relevant training content.}
+        \resumeItem{Published an RCE exploit for CVE-2025-0868 on \underline{\href{https://www.exploit-db.com/exploits/52145}{Exploit-DB}}.}
       \resumeItemListEnd
     
     \resumeSubheading
@@ -118,25 +131,29 @@
       {\href{https://fourcore.io}{FourCore Labs}}{}
       \resumeItemListStart
         \resumeItem{Analyzed global cybersecurity incidents and delivered comprehensive reports leveraging the MITRE ATT\&CK framework.}
-        \resumeItem{Proactively pursued research topics to expand knowledge base and deliver valuable insights.}
+        \resumeItem{Proactively pursued research topics to expand knowledge base on Tactics, Techniques, and Procedures (TTPs), and deliver valuable insights.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Technical Community Specialist - Internship}{Mar 2022 -- Aug 2022}
       {\href{https://whizoid.com}{Whizoid Studio}}{}
       \resumeItemListStart
-        \resumeItem{Coordinated and led technical workshops, CTFs, and cybersecurity seminars, emphasizing practical skill enhancement.}
-        \resumeItem{Delivered technical support during live events, resolving real-time issues for seamless delivery.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {IT Support Technician - Apprenticeship}{May 2019 -- Aug 2020}
-      {Logictech Computers}{}
-      \resumeItemListStart
-        \resumeItem{Built and maintained computer systems, resolving technical issues to ensure optimal performance.}
-        \resumeItem{Performed priority data recovery tasks, retrieving critical information within strict deadlines.}
+        \resumeItem{Coordinated and led technical workshops, and Capture the Flag events.}
+        \resumeItem{Delivered support during live events, resolving technical issues in real-time.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+
+\section{Certifications}
+\resumeSubHeadingListStart
+    \resumeCertHeading
+    {\textbf{CRTP - Certified Red Team Professional} $|$ \emph{Altered Security}}{In Progress}
+  \resumeCertHeading
+    {\textbf{eJPT - Junior Penetration Tester} $|$ \emph{INE Security}}{2024}
+  \resumeCertHeading
+    {\textbf{CC - Certified in Cybersecurity} $|$ \emph{ISC2}}{2023}
+\resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
 
@@ -144,33 +161,15 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Lovely Professional University}{Aug 2022 -- Jul 2025}
-      {BCA - Bachelor of Computer Applications, CGPA: 8.74}{}
-  \resumeSubHeadingListEnd
-
-%-----------CERTIFICATIONS-----------
-
-\section{Certifications}
-  \resumeSubHeadingListStart
-    \resumeCertHeading
-      {\textbf{eJPT - Junior Penetration Tester} $|$ \emph{INE Security}}{Dec 2024 -- Dec 2027}
-    \resumeCertHeading
-      {\textbf{CC - Certified in Cybersecurity} $|$ \emph{ISC2}}{Jan 2023 -- Jul 2026}
-    \resumeCertHeading
-      {\textbf{RH124 - Red Hat System Administration I} $|$ \emph{Red Hat}}{Jul 2024}
-    \resumeCertHeading
-      {\textbf{RH134 - Red Hat System Administration II} $|$ \emph{Red Hat}}{Jul 2024}
+      {BCA - Bachelor of Computer Applications, CGPA: 8.84}{}
   \resumeSubHeadingListEnd
 
 %-----------ACCOMPLISHMENTS-----------
 
 \section{Accomplishments}
 \resumeItemListStart
-    \resumeItem{\textbf{Achieved 1st place} in \textbf{Chakravyuh CTF 2025}, a 12-hour CTF competition hosted by the \textbf{School of CSE, Lovely Professional University}.}
-    \resumeItem{\textbf{Secured 2nd place} in \textbf{Hack Quest CTF 2024}, a 24-hour CTF competition hosted by \textbf{upGrad India}.}
-    \resumeItem{Placed within the \textbf{top 15 competitors} in \textbf{VulnX CTF 2024}, a 24-hour CTF competition organized by the \textbf{VULNCON Security Conference}.}
-    \resumeItem{Achieved a \textbf{global top 2\% ranking} on \textbf{TryHackMe}, a practical Cyber Security training platform.}
-    \resumeItem{Placed within the \textbf{top 50 competitors} in \textbf{BitGuard Cybersecurity Hackathon 2024}, a 20-day CTF competition by \textbf{Mercer|Mettl}.}
-    \resumeItem{Placed \textbf{54th} in \textbf{CloudSEK CTF 2024}, a 6-hour CTF competition organized by \textbf{CloudSEK}.}
+    \resumeItem{\textbf{Achieved 1st place} in \textbf{Chakravyuh CTF 2025}, a 12-hour CTF hosted by the \textbf{School of CSE, Lovely Professional University}.}
+    \resumeItem{\textbf{Secured 2nd place} in \textbf{Hack Quest CTF 2024}, a 24-hour CTF hosted by \textbf{upGrad India}.}
 \resumeItemListEnd
 
 \end{document}
