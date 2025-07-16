@@ -4,27 +4,23 @@
 % License : MIT
 %------------------------
 
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,10pt]{article}
 \linespread{1}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true, urlcolor=NavyBlue]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
-\usepackage{tabularx, multicol}
+\usepackage{tabularx}
 \usepackage[T1]{fontenc}
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{ragged2e}
 \input{glyphtounicode}
 
-\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[a4paper, margin=0.35in]{geometry}
 
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
@@ -35,21 +31,13 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
 \urlstyle{same}
 
 \raggedbottom
-\setlength{\footskip}{4.35004pt}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{2pt}\scshape\raggedright\large
+\vspace{2pt}\bfseries\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
 
 % Ensure PDF is machine-readable
@@ -92,23 +80,22 @@
 %----------HEADING----------
 
 \begin{center}
-    \textbf{\LARGE Shreyas Malhotra} \\[2pt]
-    \textbf{Penetration Tester \textbar\ CTF Developer} \\[6pt]
+    \textbf{\LARGE Shreyas Malhotra} \\[6pt]
+    \textbf{Penetration Tester \textbar\ Security Engineer} \\[6pt]
     {\footnotesize
     \makebox[\textwidth][c]{%
     \begin{tabular}{c}
         \href{tel:+916284747449}{\underline{(+91) 62847-47449}} \textbar\ 
-        \href{mailto:shreyasmalhotra2003@gmail.com}{\underline{shreyasmalhotra2003@gmail.com}} \textbar\ 
-        \href{https://linkedin.com/in/shreyas-malhotra}{\underline{linkedin.com/in/shreyas-malhotra}} \textbar\ 
+        \href{mailto:shreyasmalhotra2003@gmail.com}{\underline{shreyasmalhotra2003@gmail.com}} \textbar\
+        \href{https://linkedin.com/in/shreyas-malhotra}{\underline{linkedin.com/in/shreyas-malhotra}} \textbar\
         \href{https://github.com/shreyas-malhotra}{\underline{github.com/shreyas-malhotra}}
     \end{tabular}}}
 \end{center}
 
 %----------SUMMARY----------
-
 \begin{justify}
 \small{
-Offensive Security Engineer with hands-on experience designing practical labs for platforms like OffSec. Strong in vulnerability research, CVE analysis, and technical content engineering. Currently pursuing CRTP to build deeper skills in Active Directory, enterprise attacks, and red team operations.
+Offensive Security Engineer specializing in vulnerability assessment and penetration testing. With a proven track record building attack labs for global platforms like OffSec, publishing CVEs, and crafting hands-on technical content. Known for delivering actionable insights through strong collaboration with peers, mentors, and clients.
 }
 \end{justify}
 
@@ -118,30 +105,41 @@ Offensive Security Engineer with hands-on experience designing practical labs fo
   \resumeSubHeadingListStart
     \resumeSubheading
       {Technical Content Engineer - Freelance}{Mar 2025 -- Present}
-      {\href{https://osmsec.xyz}{OsmSec}}{}
+      {OsmSec}{}
       \resumeItemListStart
-        \resumeItem{Designed and built offensive security training labs for clients like OffSec and Parrot CTFs.}
-        \resumeItem{Authored clear, concise documentation for lab setups and solution walkthroughs.}
-        \resumeItem{Conducted in-depth CVE research to enhance the development of relevant training content.}
-        \resumeItem{Published an RCE exploit for CVE-2025-0868 on \underline{\href{https://www.exploit-db.com/exploits/52145}{Exploit-DB}}.}
+        \resumeItem{Designed and built offensive security training labs for international clients like OffSec and Parrot CTFs.}
+        \resumeItem{Authored clear, concise documentation for lab deployment, and solution walkthroughs.}
+        \resumeItem{Collaborated with security teams to align lab content with real-world use cases and skill levels.}
+        \resumeItem{Published a RCE (Remote Code Execution) exploit for CVE-2025-0868 on \underline{\href{https://www.exploit-db.com/exploits/52145}{Exploit-DB}}.}
       \resumeItemListEnd
     
     \resumeSubheading
       {Security Engineer - Internship}{Mar 2022 -- May 2022}
-      {\href{https://fourcore.io}{FourCore Labs}}{}
+      {FourCore Labs}{}
       \resumeItemListStart
-        \resumeItem{Analyzed global cybersecurity incidents and delivered comprehensive reports leveraging the MITRE ATT\&CK framework.}
+        \resumeItem{Analyzed global information security incidents and delivered comprehensive reports leveraging the MITRE ATT\&CK framework.}
         \resumeItem{Proactively pursued research topics to expand knowledge base on Tactics, Techniques, and Procedures (TTPs), and deliver valuable insights.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Technical Community Specialist - Internship}{Mar 2022 -- Aug 2022}
-      {\href{https://whizoid.com}{Whizoid Studio}}{}
+      {Whizoid Studio}{}
       \resumeItemListStart
-        \resumeItem{Coordinated and led technical workshops, and Capture the Flag events.}
-        \resumeItem{Delivered support during live events, resolving technical issues in real-time.}
+        \resumeItem{Coordinated and led technical workshops, including Capture the Flag events.}
+    \resumeItem{Supported participants and resolved technical issues during workshops and CTFs in high-pressure live settings.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\resumeItemListStart
+  \resumeItem{\textbf{Offensive Security:} Penetration Testing, Vulnerability Research, Vulnerable Lab Development, Red Team TTPs}
+  \resumeItem{\textbf{Security Tools:} Nmap, Burp Suite, BloodHound, Metasploit, mimikatz, CrackMapExec, Wireshark}
+  \resumeItem{\textbf{Development Tools:} Docker, Podman, VirtualBox, VMWare, Git}
+  \resumeItem{\textbf{Languages:} Bash, PowerShell, Python (for tooling)}
+  \resumeItem{\textbf{Frameworks:} MITRE ATT\&CK, OWASP Top 10, Cyber Kill Chain}
+  \resumeItem{\textbf{Professional Skills:} Technical reporting, cross-team collaboration, client-focused communication, structured problem-solving}
+\resumeItemListEnd
 
 %-----------CERTIFICATIONS-----------
 
@@ -155,6 +153,15 @@ Offensive Security Engineer with hands-on experience designing practical labs fo
     {\textbf{CC - Certified in Cybersecurity} $|$ \emph{ISC2}}{2023}
 \resumeSubHeadingListEnd
 
+%-----------ACCOMPLISHMENTS-----------
+
+\section{Accomplishments}
+\resumeItemListStart
+    \resumeItem{\textbf{Reported a security vulnerability} via \textbf{Wordfence}, leading to the assignment of \textbf{CVE-2025-7507} (pending public disclosure).}
+    \resumeItem{\textbf{Achieved 1st place} in \textbf{Chakravyuh CTF 2025}, a 12-hour CTF hosted by the \textbf{School of CSE, Lovely Professional University}.}
+    \resumeItem{\textbf{Secured 2nd place} in \textbf{Hack Quest CTF 2024}, a 24-hour CTF hosted by \textbf{upGrad India}.}
+\resumeItemListEnd
+
 %-----------EDUCATION-----------
 
 \section{Education}
@@ -163,13 +170,5 @@ Offensive Security Engineer with hands-on experience designing practical labs fo
       {Lovely Professional University}{Aug 2022 -- Jul 2025}
       {BCA - Bachelor of Computer Applications, CGPA: 8.84}{}
   \resumeSubHeadingListEnd
-
-%-----------ACCOMPLISHMENTS-----------
-
-\section{Accomplishments}
-\resumeItemListStart
-    \resumeItem{\textbf{Achieved 1st place} in \textbf{Chakravyuh CTF 2025}, a 12-hour CTF hosted by the \textbf{School of CSE, Lovely Professional University}.}
-    \resumeItem{\textbf{Secured 2nd place} in \textbf{Hack Quest CTF 2024}, a 24-hour CTF hosted by \textbf{upGrad India}.}
-\resumeItemListEnd
 
 \end{document}
